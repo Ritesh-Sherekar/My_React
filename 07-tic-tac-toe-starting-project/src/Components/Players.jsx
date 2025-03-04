@@ -1,11 +1,14 @@
 import { useState } from "react";
 
-export default function Players({ initialName, symbol, isActive}) {
+export default function Players({ initialName, symbol, isActive, onChangeName}) {
   const [isEiditing , setIsEiditing] = useState(false);
   const [changeName , setChangeName] = useState(initialName);
 
   function handleEiditClick() {
     setIsEiditing((eiditing) => !eiditing);
+   if(isEiditing){
+    onChangeName(symbol , changeName)
+   }
   }
 
   function handleChangeName(event){

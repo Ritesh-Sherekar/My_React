@@ -1,4 +1,4 @@
-export default function({turn}) {
+export default function Log({turn}) {
     return (
         <ol id="log">
             {turn.map((turn) =>(
