@@ -24,6 +24,7 @@ function App() {
   }
 
   return (
+    // APP Node
     <>
       <Header />
       <UserInputs userInput={userInput} onChage={handleChange} />
