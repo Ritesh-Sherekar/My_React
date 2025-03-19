@@ -6,6 +6,7 @@ import GameBoard from "./Components/GameBoard.jsx";
 import Log from "./Components/Log.jsx";
 import GameOver from "./Components/GameOver.jsx";
 
+<<<<<<< HEAD
 const initialGameBoard = [
   [null, null, null],
   [null, null, null],
@@ -13,6 +14,16 @@ const initialGameBoard = [
 ];
 
 function driveActivePlayer(gameTurns) {
+=======
+
+const initialGameBoard = [
+  [null, null, null],
+  [null, null, null],
+  [null, null, null]
+]
+
+function driveActivePlayer(gameTurns){
+>>>>>>> b4fd8dc (Added new projects and updated existing files)
   let currentPlayer = "X";
 
   if (gameTurns.length > 0 && gameTurns[0].player === "X") {
@@ -28,6 +39,7 @@ function App() {
 
   const activePlayer = driveActivePlayer(gameTurns);
 
+<<<<<<< HEAD
   let gameBoard = [...initialGameBoard.map(array => [...array])];
 
   for (const turn of gameTurns) {
@@ -57,6 +69,29 @@ function App() {
 
   const hasDraw = gameTurns.length === 9 && !winner;
 
+=======
+  let gameBoard = initialGameBoard;
+
+  for(const turn of gameTurns){
+      const {square , player} = turn;
+      const {row , col} = square;
+
+      gameBoard[row][col] = player;
+  }
+
+let winner = null;
+
+  for(const combination of WINNING_COMBINATIONS){
+    const firstSquareSymbol = gameBoard[combination[0].row][combination[0].column];
+    const secondSquareSymbol= gameBoard[combination[1].row][combination[2].column];
+    const thirdSquareSymbol= gameBoard[combination[2].row][combination[2].column];
+
+    if(firstSquareSymbol && firstSquareSymbol === secondSquareSymbol && firstSquareSymbol === thirdSquareSymbol){
+      winner = firstSquareSymbol;
+    }
+  }
+
+>>>>>>> b4fd8dc (Added new projects and updated existing files)
   function hendleSelectSquare(rowIndex, colIndex) {
     setGameTurn((prevTurns) => {
       const currentPlayer = driveActivePlayer(prevTurns);
@@ -99,8 +134,13 @@ function App() {
             onChangeName={handlePlayerNameChange}
           />
         </ol>
+<<<<<<< HEAD
         {(winner || hasDraw) && (<GameOver winner={winner}  onReset={handleReset}/>)}
         <GameBoard onSelectSquare={hendleSelectSquare} boards={gameBoard} />
+=======
+        {winner && <p>You Won, {winner}!</p>}
+        <GameBoard onSelectSquare={hendleSelectSquare} board={gameBoard} />
+>>>>>>> b4fd8dc (Added new projects and updated existing files)
       </div>
       <Log turn={gameTurns} />
     </main>
