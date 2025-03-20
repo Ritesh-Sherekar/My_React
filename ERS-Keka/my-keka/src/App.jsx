@@ -1,9 +1,11 @@
-import NavBar from '../Components/NavBar.jsx';
+import NavBar from "../Components/NavBar";
+import MainPage  from "../Components/MainPage.jsx";
 
 function App() {
   return (
     <>
       <NavBar/>
+      <MainPage/>
     </>
   )
 }
