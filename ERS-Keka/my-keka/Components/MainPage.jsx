@@ -2,7 +2,7 @@ export default function MainPage() {
   return (
     <>
       <section className=" flex m-16">
-        <div className=" w-2xl p-12">
+        <div className=" w-2xl p-12 mb-5">
           <h1 className="text-4xl text-gray-800 font-bold mb-5 ">
             Everything you need to <br /> build a great company
           </h1>
@@ -47,12 +47,14 @@ export default function MainPage() {
             </button>
           </div>
 
-          <div>
-            <img src="Image\Frame-1.svg" alt="" />
+          <div className=" p-2">
+            <img src="Image\Frame-1.svg" alt=""/>
           </div>
         </div>
 
-        <div>Left</div>
+        <div className="pt-12">
+          <img src="Image\hero-home.svg" alt="" />
+        </div>
       </section>
     </>
   );
