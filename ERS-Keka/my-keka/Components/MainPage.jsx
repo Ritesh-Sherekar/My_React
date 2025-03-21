@@ -1,7 +1,8 @@
 export default function MainPage() {
   return (
     <>
-      <section className=" flex m-16">
+      <section className=" flex ml-16 mr-16 mt-10">
+        {/* left part start */}
         <div className=" w-2xl p-12 mb-5">
           <h1 className="text-4xl text-gray-800 font-bold mb-5 ">
             Everything you need to <br /> build a great company
@@ -11,7 +12,7 @@ export default function MainPage() {
             processes to creating an engaged and driven culture, Keka <br />
             is all you need to build a good to great company.
           </p>
-          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden w-[450px] mb-5">
+          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden w-[480px] mb-5">
             {/* Email Icon & Input Field */}
             <div className="flex items-center px-2">
               <svg
@@ -19,8 +20,8 @@ export default function MainPage() {
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5 bg-white"
+                stroke="black"
+                className="w-5 h-5"
               >
                 <path
                   strokeLinecap="round"
@@ -38,23 +39,33 @@ export default function MainPage() {
             <input
               type="email"
               placeholder="Your work email"
-              className="w-full  px-3 text-gray-600 outline-none "
+              className="w-full px-3 h-10 text-gray-600 bg-white outline-none"
             />
 
             {/* Signup Button */}
-            <button className="bg-blue-500 text-white p-1 font-medium hover:bg-blue-600 text-sm ">
+            <button className="bg-blue-500 h-10 text-white px-4 py-2 font-medium hover:bg-blue-600 text-[16px] flex-shrink-0 whitespace-nowrap">
               Signup for demo
             </button>
           </div>
 
-          <div className=" p-2">
-            <img src="Image\Frame-1.svg" alt=""/>
+          <div className="pt-3">
+            <img
+              src="Image/Frame-1.svg"
+              alt=""
+              className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[480px] h-auto"
+            />
           </div>
         </div>
+
+        {/* left part End */}
+
+        {/* Right part start */}
 
         <div className="pt-12">
           <img src="Image\hero-home.svg" alt="" />
         </div>
+
+        {/* Right part End */}
       </section>
     </>
   );
