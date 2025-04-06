@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Players({ initialName, symbol, isActive, onChangeName}) {
+export default function Players({initialName, symbol, isActive, onChangeName}) {
   const [isEiditing , setIsEiditing] = useState(false);
   const [changeName , setChangeName] = useState(initialName);
 
