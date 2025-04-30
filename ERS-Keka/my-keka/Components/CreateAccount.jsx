@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function CreateAccount() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] =  useState({
     FirstName: "",
     LastName: "",
     WorkEmail: "",
