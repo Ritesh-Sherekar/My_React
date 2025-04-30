@@ -5,6 +5,7 @@ import NavBar from "../Components/NavBar";
 import MainPage  from "../Components/MainPage.jsx";
 import LogoSlider from "../Components/LogoSlider.jsx";
 import CreateAccount from "../Components/CreateAccount.jsx";
+import MyProfile from "../Components/MyProfile.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MainPage/>
       <LogoSlider/>
       <CreateAccount/>
+      <MyProfile/>
     </>
   )
 }
