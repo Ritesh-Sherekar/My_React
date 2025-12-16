@@ -20,6 +20,12 @@ import Counting from "./Counting";
 
 import MyComponent2 from "./MyComponent2";
 
+import ColorPicker from "./ColorPicker";
+
+import Car from "./Car";
+
+import FoodList from "./FoodList";
+
 function App() {
 
   // const fruits = [{id: 1, name: "apple", calories: 90}, 
@@ -55,8 +61,13 @@ function App() {
 
       {/* <Counting/> */}
 
-      <MyComponent2/>
+      {/* <MyComponent2/> */}
 
+      {/* <ColorPicker/> */}
+
+      {/* <Car/> */}
+
+      <FoodList/>
     </>
   );
 }

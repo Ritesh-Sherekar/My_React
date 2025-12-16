@@ -7,6 +7,7 @@ function MyComponent2(){
     const [quentity, setQuentity] = useState();
     const [comment, setComment] = useState("");
     const [payment, setPayment] = useState("");
+    const [city, setCity] = useState();
 
     const handleNameChange = (event) =>{
         setName(event.target.value);
@@ -22,6 +23,10 @@ function MyComponent2(){
 
     const handlePaymentChange = (event) =>{
         setPayment(event.target.value);
+    }
+
+    const handleCityChange = (event) =>{
+        setCity(event.target.value);
     }
 
     return(
@@ -42,6 +47,16 @@ function MyComponent2(){
                 <option value="Rupe">Rupe</option>
             </select>
             <p>Payment :- {payment}</p>
+
+            <label>
+                <input type="radio" value="Pune" checked={city == "Pune"} onChange={handleCityChange} />
+                Pune
+            </label><br />
+            <label>
+                <input type="radio" value="Amravati" checked={city == "Amravati"} onChange={handleCityChange} />
+                Amravati
+            </label>
+            <p>City:- {city}</p>
         </div>
     );
 }
