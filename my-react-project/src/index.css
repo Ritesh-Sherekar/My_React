@@ -1,0 +1,73 @@
+/* .cart{
+  border: 2px solid hsl(0, 0%, 81%);
+  border-radius: 10px;
+  box-shadow: 5px 5px  2px hsl(0, 0%, 0%, 0.1);
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.cart .cart-img{
+  border: 2px solid rgb(255, 255, 255);
+  background-color:rgb(243, 233, 219);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.cart .cart-head{
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.cart .cart-text{
+  font-size: 15px;
+  font-family: Arial;
+} */
+
+
+/* .student{
+  display: inline-block;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+} */
+
+
+/* .welcome{
+  font-size: 2.5em;
+  background-color: rgb(2, 182, 122);
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.login{
+  font-size: 2.5em;
+  background-color: rgb(182, 29, 2);
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 5px;
+} */
+
+.main{
+  border: 2px solid black;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.heading{
+  background-color: rgb(0, 122, 31);
+  border-radius: 5px;
+  color: wheat;
+}
+
+.list-item li{
+  text-align: center;
+  font-family: Arial;
+}
