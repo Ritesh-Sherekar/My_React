@@ -26,6 +26,10 @@ import Car from "./Car";
 
 import FoodList from "./FoodList";
 
+import MyComponent3 from "./MyComponent3";
+
+import Practice from "./Practice";
+
 function App() {
 
   // const fruits = [{id: 1, name: "apple", calories: 90}, 
@@ -67,7 +71,11 @@ function App() {
 
       {/* <Car/> */}
 
-      <FoodList/>
+      {/* <FoodList/> */}
+
+      {/* <MyComponent3/> */}
+
+      <Practice/>
     </>
   );
 }
