@@ -30,6 +30,8 @@ import MyComponent3 from "./MyComponent3";
 
 import Practice from "./Practice";
 
+import ToDoList from "./ToDoList";
+
 function App() {
 
   // const fruits = [{id: 1, name: "apple", calories: 90}, 
@@ -75,7 +77,9 @@ function App() {
 
       {/* <MyComponent3/> */}
 
-      <Practice/>
+      {/* <Practice/> */}
+
+      <ToDoList/>
     </>
   );
 }

@@ -73,7 +73,7 @@
 } */
 
 
-body{
+/* body{
   font-family: Arial, sans-serif;
 }
 
@@ -119,4 +119,30 @@ input[type="color"]{
   padding: 3px;
   border: 2px solid hsl(0, 0%, 80%);
   border-radius: 5px;
+} */
+
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+input[type="text"], button{
+  font-size: 1.3rem;
+  border: none;
+  border: 2px solid hsl(0, 0%, 80%);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ol{
+  padding: 0;
+}
+
+li{
+  display: flex;
+  align-items: center;
 }
