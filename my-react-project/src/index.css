@@ -121,6 +121,10 @@ input[type="color"]{
   border-radius: 5px;
 } */
 
+body{
+  background-color: black;
+}
+
 .to-do-list{
   font-family: Arial, sans-serif;
   text-align: center;
@@ -128,6 +132,7 @@ input[type="color"]{
 
 h2{
   font-size: 3rem;
+  color: white;
 }
 
 input[type="text"], button{
@@ -144,5 +149,31 @@ ol{
 
 li{
   display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 20px;
+  border: 2px solid hsl(0, 0%, 80%);
+  margin-bottom: 5px;
+  padding: 3px;
   align-items: center;
+  background-color:aliceblue ;
+  border-radius: 5px;
+}
+
+.delete-btn{
+  background-color: hsl(0, 86%, 81%);
+  border: 1px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.25, ease;
+}
+
+.delete-btn:hover{
+  background-color: hsl(0, 86%, 91%);
+  cursor: pointer;
+}
+
+.up-down-btn{
+  background-color: aquamarine;
+  cursor: pointer;
 }

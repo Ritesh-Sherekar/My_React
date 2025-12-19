@@ -15,15 +15,29 @@ function ToDoList(){
     }
 
     function handleDeleteTask(index){
-
+        setTask(task.filter((e,i)=> i !== index));
     }
 
     function handleUpTask(index){
+        if(index > 0){
+            const updatedTask = [...task];
 
+            [updatedTask[index], updatedTask[index - 1]] = 
+            [updatedTask[index - 1], updatedTask[index]];
+
+            setTask(updatedTask);
+        }
     }
 
     function handleDownTask(index){
+        if(index < task.length - 1){
+            const updatedTask = [...task];
 
+            [updatedTask[index], updatedTask[index + 1]] = 
+            [updatedTask[index + 1], updatedTask[index]];
+
+            setTask(updatedTask);
+        }
     }
 
     return(
@@ -40,9 +54,9 @@ function ToDoList(){
                     <li key={index}>
                         <span>{task}</span>
 
-                        <button onClick={() => handleDeleteTask(index)}>Delete</button>
-                        <button onClick={() => handleUpTask(index)}>☝</button>
-                        <button onClick={() => handleDownTask(index)}>👇</button>
+                        <button className="delete-btn" onClick={() => handleDeleteTask(index)} >Delete</button>
+                        <button className="up-down-btn" onClick={() => handleUpTask(index)}>☝</button>
+                        <button className="up-down-btn" onClick={() => handleDownTask(index)}>👇</button>
                     </li>
                 )}
 
