@@ -32,6 +32,8 @@ import Practice from "./Practice";
 
 import ToDoList from "./ToDoList";
 
+import FrontEnd from "./FrontEnd";
+
 function App() {
 
   // const fruits = [{id: 1, name: "apple", calories: 90}, 
@@ -79,7 +81,9 @@ function App() {
 
       {/* <Practice/> */}
 
-      <ToDoList/>
+      {/* <ToDoList/> */}
+
+      <FrontEnd/>
     </>
   );
 }
