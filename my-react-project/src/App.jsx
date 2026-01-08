@@ -71,7 +71,7 @@ function App() {
 
       {/* <MyComponent2/> */}
 
-      <ColorPicker/>
+      {/* <ColorPicker/> */}
 
       {/* <Car/> */}
 
@@ -83,7 +83,7 @@ function App() {
 
       {/* <ToDoList/> */}
 
-      {/* <FrontEnd/> */}
+      <FrontEnd/>
     </>
   );
 }
